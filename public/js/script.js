@@ -98,10 +98,6 @@ no_button.addEventListener('click', () => {
 });
 
 yes_button.addEventListener('click', () => {
-    // Play success sound
-    const audio = new Audio('public/images/yes.mp3');
-    audio.volume = 0.5;
-    audio.play();
     // Replace img with video element
     let bannerContainer = document.querySelector('.banner-gif');
     bannerContainer.innerHTML = '<video id="banner" src="public/images/yes.mp4" autoplay loop muted playsinline></video>';
